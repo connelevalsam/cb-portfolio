@@ -1,16 +1,127 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+    background-color: #222629;
+}
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 25%;/* width: 160px; Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+}
+.main {
+    margin-left: 25%;
+}
+.top {
+    background-color: #81918E;
+    background-image: url(/img/cb.png);
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 40vh;
+}
+.top-content {
+    background: rgba(0,0,0, 0.4);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(32, 58, 67, 0.3), rgb(44, 83, 100, 0.8), rgb(15, 32, 39, 0.8));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(32, 58, 67, 0.3), rgb(44, 83, 100, 0.8), rgb(15, 32, 39, 0.8)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 4em 0;
+    text-align: center;
+    color: white;
+}
+.one {
+    background-color: #81928f;
+    background-image: url(/img/cb.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: fixed;
+    background-size: 80%;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100vh;
+}
+.title {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.4);
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 4em 0;
+    text-align: center;
+}
+.logo {
+    position: relative;
+    margin: 1.75em 1.5em 1.5em 1.5em;
+    min-height: 48px;
+    cursor: default;
+}
+.active {
+    background-color: black;
+    padding: 1.4rem 0;
+}
+.active a span {
+    color: white;
+}
+.active a svg {
+    color: #e27689;
+}
+nav li {
+    padding: 1.4rem 0;
+    color: grey;
+}
+nav li:hover {
+    background-color: rgb(41, 39, 39);
+    padding: 1.4rem 0;
+    color: white;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.card {
+    @apply bg-white rounded-md overflow-hidden shadow-md relative hover:shadow-lg
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 480px) {
+    .one {
+        background-position: center;
+        background-size: cover;
+    }
+    .sidebar {
+        width: 100%;
+        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+        z-index: 10; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: #111; /* Black */
+        overflow-x: hidden; /* Disable horizontal scroll */
+    }
+    .main {
+        margin-left: 0;
+    }
+  }
+
+.p-signs {
+    font-size: 9px;
+    padding-bottom: 8px;
+    vertical-align: middle;
+}
+
+.twitter-dm-button {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    padding: 10px;
+    border-radius: 30px;
 }
