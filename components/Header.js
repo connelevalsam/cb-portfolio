@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import Script from 'next/script';
 import { useRouter } from 'next/router';
 const Header = () => {
   const router = useRouter();
@@ -16,18 +17,20 @@ const Header = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
           </div>
           <div className="logo text-right">
-            <span class="inline-block">
-              <h1 class="text-orange-700 font-bold text-2xl md:text-3xl">CB</h1>
+            <span className="inline-block">
+              <h1 className="text-orange-700 font-bold text-2xl md:text-3xl">
+                CB
+              </h1>
             </span>
             <h1 id="title" className="text-white text-2xl font-bold">
               Connel Asikong
@@ -77,9 +80,9 @@ const Header = () => {
                       fill="currentColor"
                     >
                       <path
-                        fill-rule="evenodd"
+                        fillRule="evenodd"
                         d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clip-rule="evenodd"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </a>
@@ -105,6 +108,7 @@ const Header = () => {
           </nav>
         </div>
       </div>
+      <Script src="/hamburger.js" />
     </>
   );
 };

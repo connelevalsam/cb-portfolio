@@ -10,7 +10,7 @@ const PagesHeader = () => {
       <Head>
         <link rel="icon" href="/cb.png" />
       </Head>
-      <div className="header sidebar hidden md:flex flex-col">
+      <div className="header sidebar md:flex flex-col hidden">
         <div className="grow">
           <div className="px-4 cursor-pointer md:hidden inline" id="burger2">
             <svg
@@ -18,18 +18,20 @@ const PagesHeader = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
-              stroke-width="2"
+              strokeWidth="2"
             >
               <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
                 d="M4 6h16M4 12h8m-8 6h16"
               />
             </svg>
           </div>
           <div className="logo text-right">
-            <span class="inline-block">
-              <h1 class="text-orange-700 font-bold text-2xl md:text-3xl">CB</h1>
+            <span className="inline-block">
+              <h1 className="text-orange-700 font-bold text-2xl md:text-3xl">
+                CB
+              </h1>
             </span>
             <h1 id="title" className="text-white text-2xl font-bold">
               Connel Asikong
