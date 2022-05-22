@@ -49,7 +49,7 @@ const Details = () => {
         </div>
         <div className="mt-8 grid md:grid-cols-3 gap-3 px-2">
           {project.images.length > 1 ? (
-            <div className="md:col-span-2 grid md:grid-cols-3 gap-4">
+            <div className="md:col-span-2 flex flex-wrap gap-4">
               {project.images.map((image) => (
                 <div className="card">
                   <img

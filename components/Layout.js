@@ -1,12 +1,24 @@
 import PagesHeader from './PagesHeader';
-import Script from 'next/script';
+import { useContext, useState } from 'react';
+import { Hamburger } from '../utils/hamburger';
 
 const Layout = ({ children }) => {
+  const { state, dispatch } = useContext(Hamburger);
+  const { menuMode } = state;
+  const handleClick = () => {
+    menuMode = true;
+    dispatch({
+      type: menuMode ? 'MENU_MODE_ON' : 'MENU_MODE_OFF',
+    });
+  };
   return (
     <div className="">
       <PagesHeader />
       <main className="main">
-        <div className="px-4 cursor-pointer md:hidden inline" id="burger">
+        <div
+          className="px-4 cursor-pointer md:hidden inline"
+          onClick={handleClick}
+        >
           <svg
             className="h-6 w-6"
             fill="none"
@@ -23,7 +35,6 @@ const Layout = ({ children }) => {
         </div>
         {children}
       </main>
-      <Script src="/hamburger.js" />
     </div>
   );
 };

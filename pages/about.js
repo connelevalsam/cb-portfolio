@@ -15,18 +15,18 @@ const About = () => {
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </Head>
       <Layout>
-        <div class="relative">
-          <section id="top" class="top dark cover"></section>
-          <div class="top-content">
-            <h1 class="md:text-4xl">About</h1>
-            <p class="text-xs md:text-lg ">
+        <div className="relative">
+          <section id="top" className="top dark cover"></section>
+          <div className="top-content">
+            <h1 className="md:text-4xl">About</h1>
+            <p className="text-xs md:text-lg ">
               Hi! My name is Connel and I found out I love building things for
               other people to use. My interest started with Web and moved to
               Mobile and right now I have interest in Web3.
             </p>
           </div>
         </div>
-        <div class="grid md:grid-cols-3 gap-1 bg-amber-400">
+        <div className="md:grid grid-cols-3 gap-1 bg-amber-400">
           <div className="flex flex-wrap justify-center items-center content-center col-span-2">
             <div className="thought">
               Started professionally 4 years ago at a startup. After My first
@@ -54,40 +54,52 @@ const About = () => {
               Currently a Tutor at Kodex and freelancer.
             </div>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <img src="/img/cb_avatar.png" alt="" />
             <div>
               <ul>
-                <span class="text-lg">
+                <span className="text-lg">
                   Here are a few technologies I've been working with recently:
                 </span>
-                <li>Flutter</li>
-                <li>JavaScript (ES6+)</li>
-                <li>NextJS</li>
-                <li>React</li>
-                <li>MySQL</li>
-                <li>Firebase</li>
+                <li className="bg-red-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  Flutter
+                </li>
+                <li className="bg-green-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  JavaScript (ES6+)
+                </li>
+                <li className="bg-blue-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  NextJS
+                </li>
+                <li className="bg-cyan-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  React
+                </li>
+                <li className="bg-indigo-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  MySQL
+                </li>
+                <li className="bg-teal-500 rounded-full p-3 my-2 text-white flex justify-center">
+                  Firebase
+                </li>
               </ul>
               <br />
-              <div class="px-4 bg-slate-700 text-gray-400 flex flex-wrap justify-evenly">
-                <a href="#" class="">
-                  <span class="p-signs">&#11040;</span> Git
+              <div className="px-4 bg-slate-700 text-gray-400 flex flex-wrap justify-evenly">
+                <a href="#" className="">
+                  <span className="p-signs">&#11040;</span> Git
                 </a>
-                <a href="#" class="">
-                  <span class="p-signs">&#11040;</span> GitHub
+                <a href="#" className="">
+                  <span className="p-signs">&#11040;</span> GitHub
                 </a>
-                <a href="#" class="">
-                  <span class="p-signs">&#11040;</span> Agile
+                <a href="#" className="">
+                  <span className="p-signs">&#11040;</span> Agile
                 </a>
-                <a href="#" class="">
-                  <span class="p-signs">&#11040;</span> Contentful
+                <a href="#" className="">
+                  <span className="p-signs">&#11040;</span> Contentful
                 </a>
-                <a href="#" class="">
-                  <span class="p-signs">&#11040;</span> Netlify
+                <a href="#" className="">
+                  <span className="p-signs">&#11040;</span> Netlify
                 </a>
               </div>
               Check out some of the things I've built{' '}
-              <a href="portfolio.html" class="underline text-blue-600">
+              <a href="portfolio.html" className="underline text-blue-600">
                 Here.
               </a>
             </div>

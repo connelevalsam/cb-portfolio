@@ -1,8 +1,19 @@
 import Head from 'next/head';
 import Image from 'next/image';
+import { useContext } from 'react';
 import Header from '../components/Header';
+import { Hamburger } from '../utils/hamburger';
 
 export default function Home() {
+  const { state, dispatch } = useContext(Hamburger);
+  const { menuMode } = state;
+  const handleClick = () => {
+    menuMode = true;
+    console.log('home...', menuMode);
+    dispatch({
+      type: menuMode ? 'MENU_MODE_ON' : 'MENU_MODE_OFF',
+    });
+  };
   return (
     <div className="">
       <Head>
@@ -16,7 +27,10 @@ export default function Home() {
       <div className="grid md:grid-cols-4">
         <Header />
         <div className="md:col-span-3 relative">
-          <div className="px-4 cursor-pointer md:hidden inline" id="burger">
+          <div
+            className="px-4 cursor-pointer md:hidden inline"
+            onClick={handleClick}
+          >
             <svg
               className="h-6 w-6"
               fill="none"

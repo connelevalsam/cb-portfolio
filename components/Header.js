@@ -1,17 +1,41 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import Script from 'next/script';
 import { useRouter } from 'next/router';
+import { useContext } from 'react';
+import { Hamburger } from '../utils/hamburger';
 const Header = () => {
   const router = useRouter();
+  const { state, dispatch } = useContext(Hamburger);
+  const { menuMode } = state;
+  let display = 'hidden';
+  let display2 = 'md:hidden';
+  const handleClick = () => {
+    menuMode = false;
+    console.log('home 2...', menuMode);
+    dispatch({
+      type: menuMode ? 'MENU_MODE_ON' : 'MENU_MODE_OFF',
+    });
+  };
+  if (menuMode === true) {
+    display = '';
+    display2 = '';
+  } else {
+    display = 'hidden';
+    display2 = 'md:hidden';
+  }
   return (
     <>
       <Head>
         <link rel="icon" href="/cb.png" />
       </Head>
-      <div className="md:col-span-1 h-screen header hidden md:flex flex-col">
+      <div
+        className={'md:col-span-1 h-screen header md:flex flex-col ' + display}
+      >
         <div className="md:flex flex-col">
-          <div className="px-4 cursor-pointer md:hidden inline" id="burger2">
+          <div
+            className={'px-4 cursor-pointer inline ' + display2}
+            onClick={handleClick}
+          >
             <svg
               className="h-6 w-6"
               fill="none"
@@ -39,7 +63,10 @@ const Header = () => {
           </div>
           <nav className="text-center md:text-right">
             <ul>
-              <li className={router.pathname == '/' ? 'active' : ''}>
+              <li
+                className={router.pathname == '/' ? 'active' : ''}
+                onClick={handleClick}
+              >
                 <Link href="/">
                   <a className="pr-6 py-3">
                     <span>Home</span>
@@ -54,7 +81,7 @@ const Header = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              <li onClick={handleClick}>
                 <Link href="/portfolio">
                   <a className="pr-6 py-3">
                     <span>Portfolio</span>
@@ -69,7 +96,7 @@ const Header = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              <li onClick={handleClick}>
                 <Link href="/about">
                   <a className="pr-6 py-3">
                     <span>About Me</span>
@@ -88,7 +115,7 @@ const Header = () => {
                   </a>
                 </Link>
               </li>
-              <li>
+              <li onClick={handleClick}>
                 <Link href="/contact">
                   <a className="pr-6 py-3">
                     <span>Contact Me</span>
@@ -108,7 +135,6 @@ const Header = () => {
           </nav>
         </div>
       </div>
-      <Script src="/hamburger.js" />
     </>
   );
 };

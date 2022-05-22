@@ -103,7 +103,7 @@ nav li:hover {
     @apply bg-white rounded-md overflow-hidden shadow-md relative hover:shadow-lg
 }
 
-@media (max-width: 480px) {
+@media (max-width: 700px) {
     .one {
         background-position: center;
         background-size: cover;
