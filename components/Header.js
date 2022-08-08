@@ -115,7 +115,7 @@ const Header = () => {
                   </a>
                 </Link>
               </li>
-              <li onClick={handleClick}>
+              {/* <li onClick={handleClick}>
                 <Link href="/contact">
                   <a className="pr-6 py-3">
                     <span>Contact Me</span>
@@ -130,7 +130,7 @@ const Header = () => {
                     </svg>
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>

@@ -60,6 +60,7 @@ const Portfolio = () => {
             <a
               href="https://connelblaze.medium.com"
               className="text-blue-500 underline text-lg"
+              target="_blank"
             >
               Medium
             </a>
@@ -69,6 +70,7 @@ const Portfolio = () => {
             <a
               href="https://dev.to/connelevalsam"
               className="text-blue-500 underline text-lg"
+              target="_blank"
             >
               Dev.to
             </a>
@@ -78,6 +80,7 @@ const Portfolio = () => {
             <a
               href="https://askubuntu.com/questions/828770/snipping-tool-in-ubuntu-16-04/896006#896006"
               className="text-blue-500 underline text-lg"
+              target="_blank"
             >
               StackExchange
             </a>{' '}
@@ -85,6 +88,7 @@ const Portfolio = () => {
             <a
               href="https://stackoverflow.com/questions/59554348/how-can-i-change-drawer-icon-in-flutter/66532838#66532838"
               className="text-blue-500 underline"
+              target="_blank"
             >
               Stackoverflow
             </a>

@@ -32,7 +32,7 @@ const PagesHeader = () => {
       <div className={'header sidebar md:flex flex-col ' + display}>
         <div className="grow">
           <div
-            className={'px-4 cursor-pointer inline' + display2}
+            className={'px-4 cursor-pointer inline ' + display2}
             onClick={handleClick}
           >
             <svg
@@ -120,7 +120,7 @@ const PagesHeader = () => {
                   </a>
                 </Link>
               </li>
-              <li
+              {/* <li
                 className={router.pathname == '/contact' ? 'active' : ''}
                 onClick={handleClick}
               >
@@ -138,7 +138,7 @@ const PagesHeader = () => {
                     </svg>
                   </a>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
         </div>
