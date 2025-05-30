@@ -22,27 +22,27 @@ const About = () => {
             <p className="text-xs md:text-lg ">
               Hi! My name is Connel and I found out I love building things for
               other people to use. My interest started with Web and moved to
-              Mobile and right now I have interest in Web3.
+              Mobile and right now I have interest in Blockchain.
             </p>
           </div>
         </div>
         <div className="md:grid grid-cols-3 gap-1 bg-amber-400">
           <div className="flex flex-wrap justify-center items-center content-center col-span-2">
             <div className="thought">
-              Started professionally 4 years ago at a startup. After My first
+              Started professionally 7 years ago at a startup. After My first
               job, I had worked at 3 other companies and startups and right now
               I just work and freelance. I studied Computer Science.
             </div>
             <div className="thought">
               Started teaching various programming languages as well from
-              2016-2019. Worked in Jensiv LTD as Lead Mobile Developer, then
-              moved to Freshtooth as Flutter Developer, Currently working at
-              Kodex.
+              2016-2019 at Aptech. Worked at Jensiv LTD as Lead Mobile Developer, then
+              moved to Freshtooth, Flutter Developer and Tutor at
+              Kodex. Mobile lead at AuxilloRX, QuickBill and Swiftier. Currently a co-founder at Nawe.
             </div>
             <div className="thought">
               Started writing blog posts on Medium in 2017, written almost 8 so
               far. Asked and answered quesions on the different Stackoverflow
-              branches.
+              branches. Currently pushing the Anambra Techies community and FlutterIoT.
             </div>
             <div className="thought">
               My work has been considered very impressive by previous employers
@@ -51,7 +51,7 @@ const About = () => {
               though I might not be needed to code.
             </div>
             <div className="thought">
-              Currently a Tutor at Kodex and freelancer.
+              Currently a Mobile lead developer at AuxilloRX, QuickBill and Swiftier. Co-founder of Nawe.
             </div>
           </div>
           <div className="text-center md:text-left">
@@ -71,7 +71,7 @@ const About = () => {
                   NextJS
                 </li>
                 <li className="bg-cyan-500 rounded-full p-3 my-2 text-white flex justify-center">
-                  React
+                  Laravel
                 </li>
                 <li className="bg-indigo-500 rounded-full p-3 my-2 text-white flex justify-center">
                   MySQL
@@ -99,7 +99,7 @@ const About = () => {
                 </a>
               </div>
               Check out some of the things I've built{' '}
-              <a href="portfolio.html" className="underline text-blue-600">
+              <a href="/portfolio" className="underline text-blue-600">
                 Here.
               </a>
             </div>
