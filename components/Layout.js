@@ -4,7 +4,7 @@ import { Hamburger } from '../utils/hamburger';
 
 const Layout = ({ children }) => {
   const { state, dispatch } = useContext(Hamburger);
-  const { menuMode } = state;
+  let { menuMode } = state;
   const handleClick = () => {
     menuMode = true;
     dispatch({

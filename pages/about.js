@@ -20,38 +20,31 @@ const About = () => {
           <div className="top-content">
             <h1 className="md:text-4xl">About</h1>
             <p className="text-xs md:text-lg ">
-              Hi! My name is Connel and I found out I love building things for
-              other people to use. My interest started with Web and moved to
-              Mobile and right now I have interest in Blockchain.
+              Flutter Engineer & Mobile Lead. 7 years building apps that ship, scale, and matter.
             </p>
           </div>
         </div>
         <div className="md:grid grid-cols-3 gap-1 bg-amber-400">
           <div className="flex flex-wrap justify-center items-center content-center col-span-2">
             <div className="thought">
-              Started professionally 7 years ago at a startup. After My first
-              job, I had worked at 3 other companies and startups and right now
-              I just work and freelance. I studied Computer Science.
+              I've been building software professionally for 7 years. Starting
+              with web, going deep into mobile, and leading teams across
+              healthcare, fintech, hospitality, and education. I studied
+              Computer Science and have shipped apps to both the App Store and
+              Google Play.
             </div>
             <div className="thought">
-              Started teaching various programming languages as well from
-              2016-2019 at Aptech. Worked at Jensiv LTD as Lead Mobile Developer, then
-              moved to Freshtooth, Flutter Developer and Tutor at
-              Kodex. Mobile lead at AuxilloRX, QuickBill and Swiftier. Currently a co-founder at Nawe.
+              I've worked as Lead Mobile Developer at Jensiv, Flutter Developer
+              at Freshtooth, Technical Tutor & Developer at Kodex, Mobile Lead
+              at AuxilloRX, and currently contract developer at Swiftier and
+              co-founder at Nawe — where I also built and run NaweSchools,
+              training 1,000+ developers.
             </div>
             <div className="thought">
-              Started writing blog posts on Medium in 2017, written almost 8 so
-              far. Asked and answered quesions on the different Stackoverflow
-              branches. Currently pushing the Anambra Techies community and FlutterIoT.
-            </div>
-            <div className="thought">
-              My work has been considered very impressive by previous employers
-              and clients all over the world. and I am confident that I live up
-              to the hype. To me, I believe I can be of help to anyone even
-              though I might not be needed to code.
-            </div>
-            <div className="thought">
-              Currently a Mobile lead developer at AuxilloRX, QuickBill and Swiftier. Co-founder of Nawe.
+              Beyond code, I run the BitDev and FlutterIoT communities,
+              speak at tech meetups, and write on Medium and Dev.to. I am one of the persons that started the Anambra Techies community. I care about
+              growing the next generation of African developers as much as I
+              care about shipping great products.
             </div>
           </div>
           <div className="text-center md:text-left">
@@ -92,10 +85,10 @@ const About = () => {
                   <span className="p-signs">&#11040;</span> Agile
                 </a>
                 <a href="#" className="">
-                  <span className="p-signs">&#11040;</span> Contentful
+                  <span className="p-signs">&#11040;</span> AI
                 </a>
                 <a href="#" className="">
-                  <span className="p-signs">&#11040;</span> Netlify
+                  <span className="p-signs">&#11040;</span> APIs
                 </a>
               </div>
               Check out some of the things I've built{' '}

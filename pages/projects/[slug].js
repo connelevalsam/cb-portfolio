@@ -25,7 +25,7 @@ const Details = () => {
     'bg-stone-600',
     'bg-cyan-600',
   ];
-  const i = project.stacks.length;
+  let i = project.stacks.length;
   return (
     <>
       <Head>
@@ -39,8 +39,8 @@ const Details = () => {
       <Layout>
         <div className="text-center">
           <div className="text-left px-10 py-5">
-            <Link href="/portfolio">
-              <a className="underline">Go back</a>
+            <Link href="/portfolio" className="underline">
+              Go back
             </Link>
           </div>
           <div className="m-4">

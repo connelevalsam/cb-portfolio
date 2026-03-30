@@ -19,8 +19,7 @@ const data = {
         'FIGMA',
       ],
       rating: 4.0,
-      description:
-        'This app ensures easy access to medication information, reminders, and more.',
+      description: 'Led mobile development of a healthcare app providing medication information, prescription reminders, and patient management. Built cross-platform on Flutter and deployed to both the App Store and Google Play, meeting healthcare compliance standards.',
     },
     {
       id: 2,
@@ -32,8 +31,7 @@ const data = {
       mlink: 'https://swiftier.ca/',
       stacks: ['FLUTTER', 'DART', 'JAVA', 'ANDROID', 'IOS', 'API', 'FIGMA'],
       rating: 4.0,
-      description:
-        'With user-friendly features, competitive exchange rates, and robust security measures, this app simplifies international transactions.',
+      description: 'Contract Flutter engineer and team lead on an international money transfer platform serving users across borders. Implemented cross-border payment flows, real-time exchange rates, and enterprise-grade fraud detection and security measures.',
     },
     {
       id: 3,
@@ -54,8 +52,7 @@ const data = {
         'LINUX',
       ],
       rating: 4.0,
-      description:
-        'A site for Kodex NG limited. Where I trained next gen on cutting-edge technologies.',
+      description: 'Built the company website for Kodex NG Ltd using Laravel, MySQL, and vanilla JavaScript. Kodex is a tech training institution where I also served as Flutter developer and technical tutor, training 100+ students in mobile development.',
     },
     {
       id: 4,
@@ -67,7 +64,7 @@ const data = {
       mlink: 'https://apps.apple.com/ng/app/aura-by-transcorp-hotels/id6444285134',
       stacks: ['FLUTTER', 'DART', 'JAVA', 'ANDROID', 'IOS', 'APIs'],
       rating: 4.5,
-      description: 'An online platform that helps you book accommodations.',
+      description: 'Flutter-built hotel booking app for Transcorp Hotels, one of Nigeria\'s leading hospitality brands. Features property listings, room selection, check-in management, and seamless booking flows — live on the Apple App Store.',
     },
     {
       id: 5,
@@ -79,7 +76,7 @@ const data = {
       mlink: 'https://www.blogshop.io',
       stacks: ['FLUTTER', 'DART', 'KOTLIN', 'ANDROID', 'IOS', 'JSON'],
       rating: 4.2,
-      description: 'A storytelling app.',
+      description: 'A Flutter-built storytelling and content platform for writers and readers. Supports rich content creation, discovery, and community engagement across Android and iOS.',
     },
     {
       id: 6,
@@ -100,8 +97,7 @@ const data = {
         'CROSS-PLATFORM',
       ],
       rating: 4.0,
-      description:
-        'Quickbill allows you to easily top-up airtime, pay for electricity, and manage educational fees all in one place.',
+      description: 'Project managed and led mobile development of this VTU and bills payment app. Users can top up airtime, pay electricity bills, and manage school fees — all in one place. Built with Flutter on both iOS and Android as part of the Nawe ecosystem.',
     },
   ],
 };

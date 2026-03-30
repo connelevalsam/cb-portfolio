@@ -6,7 +6,7 @@ import { Hamburger } from '../utils/hamburger';
 const Header = () => {
   const router = useRouter();
   const { state, dispatch } = useContext(Hamburger);
-  const { menuMode } = state;
+  let { menuMode } = state;
   let display = 'hidden';
   let display2 = 'md:hidden';
   const handleClick = () => {
@@ -67,57 +67,56 @@ const Header = () => {
                 className={router.pathname == '/' ? 'active' : ''}
                 onClick={handleClick}
               >
-                <Link href="/">
-                  <a className="pr-6 py-3">
-                    <span>Home</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 inline"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
-                    </svg>
-                  </a>
+                <Link href="/" className="pr-6 py-3">
+
+                  <span>Home</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                  </svg>
+
                 </Link>
               </li>
               <li onClick={handleClick}>
-                <Link href="/portfolio">
-                  <a className="pr-6 py-3">
-                    <span>Portfolio</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 inline"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
-                    </svg>
-                  </a>
+                <Link href="/portfolio" className="pr-6 py-3">
+
+                  <span>Portfolio</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" />
+                  </svg>
+
                 </Link>
               </li>
               <li onClick={handleClick}>
-                <Link href="/about">
-                  <a className="pr-6 py-3">
-                    <span>About Me</span>
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="h-5 w-5 inline"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                  </a>
+                <Link href="/about" className="pr-6 py-3">
+
+                  <span>About Me</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 inline"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+
                 </Link>
               </li>
-              {/* <li onClick={handleClick}>
-                <Link href="/contact">
-                  <a className="pr-6 py-3">
+              <li onClick={handleClick}>
+                <Link href="/contact" className="pr-6 py-3">
                     <span>Contact Me</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -128,9 +127,8 @@ const Header = () => {
                       <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                       <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                     </svg>
-                  </a>
                 </Link>
-              </li> */}
+              </li> 
             </ul>
           </nav>
         </div>

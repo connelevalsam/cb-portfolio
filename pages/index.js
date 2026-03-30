@@ -6,7 +6,7 @@ import { Hamburger } from '../utils/hamburger';
 
 export default function Home() {
   const { state, dispatch } = useContext(Hamburger);
-  const { menuMode } = state;
+  let { menuMode } = state;
   const handleClick = () => {
     menuMode = true;
     console.log('home...', menuMode);
@@ -18,7 +18,7 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Me | Connelblaze - Connel Asikong Portfolio</title>
-        <meta name="description" content="ConnelAsikong Portfolio" />
+        <meta name="description" content="Connel Asikong — Flutter Engineer & Mobile Lead with 7 years building mobile and web apps across healthcare, fintech, and education." />
         <meta name="keywords" content="Connel, Asikong, Flutter Dev" />
         <meta name="author" content="Connel Asikong" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
@@ -52,15 +52,23 @@ export default function Home() {
               <strong className="text-2xl font-effect-fire">
                 Connel Asikong
               </strong>
-              , a Software Engineer.
             </h2>
-            <p>
-              Ranging from: Mobile Apps, Web Apps, Websites, SEO and Project
-              Consultant.
+            <p className="text-lg font-semibold tracking-wide">
+              Flutter Engineer & Mobile Lead
+            </p>
+            <p className='px-4'>
+              I've spent 7 years turning ideas into apps people actually use —
+              from healthcare and fintech to hospitality and education.
+              Mobile-first, product-minded, and always focused on impact.
             </p>
             <span>
-              <i>To begin. Begin</i>
+              <i>Currently open to new opportunities.</i>
             </span>
+            <div className="mt-4">
+              <a href="/portfolio" className="bg-orange-700 text-white px-6 py-2 rounded-full hover:bg-orange-600 transition-colors">
+                See My Work →
+              </a>
+            </div>
           </header>
         </div>
       </div>
