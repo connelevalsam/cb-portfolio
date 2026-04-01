@@ -100,7 +100,7 @@ const About = () => {
         </div>
       </Layout>
     </>
-  );
-};
+  )
+}
 
 export default About;

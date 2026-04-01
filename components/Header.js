@@ -59,7 +59,7 @@ const Header = () => {
             <h1 id="title" className="text-white text-2xl font-bold">
               Connel Asikong
             </h1>
-            <p className="text-gray-100 ">Software Engineer</p>
+            <p className="text-gray-100 ">Flutter Engineer & Mobile Lead</p>
           </div>
           <nav className="text-center md:text-right">
             <ul>

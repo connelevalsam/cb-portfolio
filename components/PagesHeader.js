@@ -29,10 +29,17 @@ const PagesHeader = () => {
       <Head>
         <link rel="icon" href="/cb.png" />
       </Head>
-      <div className={'header sidebar md:flex flex-col ' + display}>
+
+      {/* Overlay backdrop */}
+    <div
+      className={`sidebar-overlay ${menuMode ? 'open' : ''}`}
+      onClick={handleClick}
+    />
+
+      <div className={`header sidebar flex flex-col ${menuMode ? 'open' : ''}`}>
         <div className="grow">
           <div
-            className={'px-4 cursor-pointer inline ' + display2}
+            className="px-4 py-3 cursor-pointer md:hidden flex justify-end"
             onClick={handleClick}
           >
             <svg
@@ -45,7 +52,7 @@ const PagesHeader = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M4 6h16M4 12h8m-8 6h16"
+                d="M6 18L18 6M6 6l12 12"
               />
             </svg>
           </div>
@@ -58,7 +65,7 @@ const PagesHeader = () => {
             <h1 id="title" className="text-white text-2xl font-bold">
               Connel Asikong
             </h1>
-            <p className="text-gray-100 ">Software Engineer</p>
+            <p className="text-gray-100 ">Flutter Engineer & Mobile Lead</p>
           </div>
           <nav className="text-center md:text-right">
             <ul>

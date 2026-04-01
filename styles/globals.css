@@ -3,13 +3,19 @@
 @tailwind utilities;
 
 html {
-    font-family: Trirong, Sofia, Audiowide, sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: var(--text);
+}
+h1, h2, h3, .logo h1, #title {
+    font-family: 'Syne', sans-serif;
 }
 strong {
-    font-family: Sofia;
+    font-family: 'Syne', sans-serif;
+    font-weight: 700;
 }
 a {
-    font-family: Sofia;
+    font-family: 'Inter', sans-serif;
 }
 .header {
     background-color: #222629;
@@ -103,24 +109,20 @@ nav li:hover {
     @apply bg-white rounded-md overflow-hidden shadow-md relative hover:shadow-lg
 }
 
-@media (max-width: 700px) {
-    .one {
-        background-position: center;
-        background-size: cover;
-    }
-    .sidebar {
-        width: 100%;
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 10; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        background-color: #111; /* Black */
-        overflow-x: hidden; /* Disable horizontal scroll */
-    }
-    .main {
-        margin-left: 0;
-    }
-  }
+.card img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+  opacity: 0.92;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
 
 .p-signs {
     font-size: 9px;
@@ -138,16 +140,19 @@ nav li:hover {
 .thought {
     display:flex;
     background-color:#fff;
-    padding:20px;
+    padding:20px 24px;
     border-radius:30px;
     min-width:40px;
-    max-width:200px;
+    max-width:280px;
+    width: 100%;
     min-height:40px;
-    margin:20px;
+    margin:16px auto;
     position:relative;
     align-items:center;
     justify-content:center;
     text-align:center;
+    font-size: 0.9rem;
+    line-height: 1.6;
   }
   .thought:before,
   .thought:after {
@@ -176,3 +181,73 @@ nav li:hover {
                -5px 25px 0 -10px #fff;
     
   }
+
+  .stack-tag, nav li span {
+    font-family: 'Fira Code', monospace;
+    font-size: 0.85rem;
+}
+
+@media (max-width: 700px) {
+  .one {
+    background-position: center;
+    background-size: cover;
+  }
+  .sidebar {
+    width: 75%;
+    max-width: 280px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #111;
+    overflow-x: hidden;
+    transform: translateX(-100%);
+    transition: transform 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 4px 0 24px rgba(0,0,0,0.4);
+  }
+  .sidebar.open {
+    transform: translateX(0);
+  }
+  .sidebar-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 99;
+  }
+  .sidebar-overlay.open {
+    display: block;
+  }
+  .main {
+    margin-left: 0;
+  }
+  .thought {
+    max-width: 90%;
+    font-size: 0.85rem;
+  }
+}
+
+
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #e27689;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Skip nav for screen readers */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 1rem;
+  background: #e27689;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  z-index: 999;
+}
+.skip-link:focus {
+  top: 1rem;
+}

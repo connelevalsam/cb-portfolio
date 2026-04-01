@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Link from 'next/link';
 import Layout from '../components/Layout';
 import data from '../utils/data';
 
@@ -101,13 +102,13 @@ const Portfolio = () => {
             height="100%"
           >
             <p>
-              <a
+              <Link
                 href="/media/ConnelAsikongResume.pdf"
                 target="_blank"
                 className="bg-blue-600 text-white p-3 mt-10"
               >
                 My Resume
-              </a>
+              </Link>
             </p>
           </object>
         </div>
