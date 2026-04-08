@@ -100,6 +100,22 @@ const data = {
       description: 'Project managed and led mobile development of this VTU and bills payment app. Users can top up airtime, pay electricity bills, and manage school fees — all in one place. Built with Flutter on both iOS and Android as part of the Nawe ecosystem.',
     },
   ],
+  posts: [
+    {
+      title: 'Building Blogshop: Flutter, writers, and storytelling',
+      description:
+        'A behind-the-scenes look at how I built Blogshop with Flutter, clean content layouts, and a polished cross-platform experience.',
+      date: 'April 2026',
+      tag: 'Tech',
+    },
+    {
+      title: 'From prototype to product: shipping mobile experiences',
+      description:
+        'Lessons from turning ideas into shipped apps, focusing on user feedback, reusable UI, and maintaining quality.',
+      date: 'March 2026',
+      tag: 'Product',
+    },
+  ],
 };
 
 export default data;

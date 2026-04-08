@@ -129,6 +129,19 @@ const Header = () => {
                     </svg>
                 </Link>
               </li> 
+              <li onClick={handleClick}>
+                <Link href="/blogs" className="pr-6 py-3">
+                    <span>Blogs</span>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-5 w-5 inline"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path d="M3 4.5C3 3.67 3.67 3 4.5 3h11c.83 0 1.5.67 1.5 1.5V16c0 .55-.45 1-1 1-2.48 0-4.76-1.03-6.5-2.75C8.76 15.97 6.48 17 4 17c-.55 0-1-.45-1-1V4.5zM6 5v9.2c1.3-.86 2.8-1.4 4.5-1.5V5H6zm8 0h-4.5v7.7c1.7.1 3.2.64 4.5 1.5V5z" />
+                    </svg>
+                </Link>
+              </li> 
             </ul>
           </nav>
         </div>
