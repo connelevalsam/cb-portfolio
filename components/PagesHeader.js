@@ -63,9 +63,9 @@ const PagesHeader = () => {
               </h1>
             </span>
             <h1 id="title" className="text-white text-2xl font-bold">
-              Connel Asikong
+              connel asikong
             </h1>
-            <p className="text-gray-100 ">Flutter Engineer & Mobile Lead</p>
+            <p className="text-gray-100 ">product strategy, technology & engineering</p>
           </div>
           <nav className="text-center md:text-right">
             <ul>
@@ -75,7 +75,7 @@ const PagesHeader = () => {
               >
                 <Link href="/" className="pr-6 py-3">
 
-                  <span>Home</span>
+                  <span>home</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 inline"
@@ -93,7 +93,7 @@ const PagesHeader = () => {
               >
                 <Link href="/portfolio" className="pr-6 py-3">
 
-                  <span>Portfolio</span>
+                  <span>portfolio</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 inline"
@@ -111,7 +111,7 @@ const PagesHeader = () => {
               >
                 <Link href="/about" className="pr-6 py-3">
 
-                  <span>About Me</span>
+                  <span>about me</span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="h-5 w-5 inline"
@@ -133,7 +133,7 @@ const PagesHeader = () => {
               >
                 <Link href="/contact" className="pr-6 py-3">
                   
-                    <span>Contact Me</span>
+                    <span>contact me</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 inline"
@@ -153,7 +153,7 @@ const PagesHeader = () => {
               >
                 <Link href="/blogs" className="pr-6 py-3">
                   
-                    <span>Blogs</span>
+                    <span>blogs</span>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="h-5 w-5 inline"

@@ -7,7 +7,7 @@ const Portfolio = () => {
   return (
     <>
       <Head>
-        <title>See My Works | Connelblaze - Connel Asikong Portfolio</title>
+        <title>see my works | connelblaze - connel asikong portfolio</title>
         <meta name="description" content="Connel Asikong Portfolio" />
         <meta
           name="keywords"
@@ -20,14 +20,11 @@ const Portfolio = () => {
         <div className="relative">
           <section id="top" className="top dark cover"></section>
           <div className="top-content">
-            <h1 className="md:text-4xl">Portfolio</h1>
+            <h1 className="md:text-4xl">selected work, built around real problems.</h1>
+            <br />
             <p className="text-xs md:text-lg ">
-              <span className="text-2xl font-bold">Strategy:</span> Ask first.
-              Before jumping into designing.{' '}
-              <span className="text-2xl font-bold">Design:</span> Problem
-              solving. <span className="text-2xl font-bold">Development:</span>{' '}
-              Bringing designs to life.
-              <br />
+              a selection of digital products i've helped design, develop, or bring to market
+              <br />with the problem, my role, and the work behind each one.
             </p>
           </div>
         </div>
@@ -54,10 +51,10 @@ const Portfolio = () => {
         </div>
         <div className="mt-36 px-20 mb-20">
           <h1 className="text-center text-2xl font-bold">
-            Other things I have done
+            other things I have done
           </h1>
           <p>
-            Run a blog on{' '}
+            run a blog on{' '}
             <a
               href="https://connelblaze.medium.com"
               className="text-blue-500 underline text-lg"
@@ -66,7 +63,7 @@ const Portfolio = () => {
               Medium
             </a>
           </p>
-          <p>
+          {/* <p>
             Also on{' '}
             <a
               href="https://dev.to/connelevalsam"
@@ -75,15 +72,15 @@ const Portfolio = () => {
             >
               Dev.to
             </a>
-          </p>
+          </p> */}
           <p>
-            Some of my contributions on{' '}
+            some of my contributions on{' '}
             <a
               href="https://askubuntu.com/questions/828770/snipping-tool-in-ubuntu-16-04/896006#896006"
               className="text-blue-500 underline text-lg"
               target="_blank"
             >
-              StackExchange
+              stackExchange
             </a>{' '}
             and{' '}
             <a
@@ -91,7 +88,7 @@ const Portfolio = () => {
               className="text-blue-500 underline"
               target="_blank"
             >
-              Stackoverflow
+              stackoverflow
             </a>
           </p>
           <br />
@@ -107,7 +104,7 @@ const Portfolio = () => {
                 target="_blank"
                 className="bg-blue-600 text-white p-3 mt-10"
               >
-                My Resume
+                my resume
               </Link>
             </p>
           </object>

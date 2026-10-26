@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About Me | Connelblaze - Connel Asikong Portfolio</title>
+        <title>about me | connelblaze - connel asikong portfolio</title>
         <meta name="description" content="Connel Asikong Portfolio" />
         <meta
           name="keywords"
@@ -18,9 +18,10 @@ const About = () => {
         <div className="relative">
           <section id="top" className="top dark cover"></section>
           <div className="top-content">
-            <h1 className="md:text-4xl">About</h1>
+            <h1 className="md:text-4xl">i work at the intersection of products, technology, and business.</h1>
+            <br />
             <p className="text-xs md:text-lg ">
-              Flutter Engineer & Mobile Lead. 7 years building apps that ship, scale, and matter.
+              i build on my engineering background to help businesses decide what to build, shape the product, and lead the path to delivery.
             </p>
           </div>
         </div>
@@ -48,7 +49,7 @@ const About = () => {
             </div>
           </div>
           <div className="text-center md:text-left">
-            <img src="/img/cb_avatar.png" alt="" />
+            <img src="/img/connel-professional.png" alt="connel asikong" />
             <div>
               <ul>
                 <span className="text-lg">
